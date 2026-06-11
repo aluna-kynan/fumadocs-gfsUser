@@ -1,0 +1,91 @@
+Landing Page (gameforsmart.com)
+src/
+  components/
+    Navbar.tsx— logo, nav links, login/daftar
+    HeroSection.tsx— tagline, visual, 2 CTA
+    StatsBar.tsx— pemain aktif, game, soal, negara
+    GameShowcase.tsx— grid 7 game
+    GameCard.tsx— card reusable per game
+    HowToStart.tsx— 3 langkah cara mulai
+    WhyGFS.tsx— 4 keunggulan platform
+    LeaderboardPreview.tsx— top 5–10 pemain global
+    Testimonials.tsx— quote 3–5 pemain
+    CTAFinal.tsx— ajakan daftar kedua
+    Footer.tsx— link game, docs, legal, sosmed
+  data/
+    games.ts— data 7 game (nama, url, deskripsi, icon)
+    stats.ts— data stats bar
+  app/page.tsx— halaman utama, susun semua section
+Docs (Fumadocs) — content/docs/
+content/docs/
+  index.mdxhalaman— docs home
+  meta.jsonmeta— urutan sidebar root
+  getting-started/
+    meta.jsonmeta
+    index.mdxhalaman— pengenalan platform
+    daftar-akun.mdxhalaman
+    cara-login.mdxhalaman
+    navigasi-platform.mdxhalaman
+  app/
+    meta.jsonmeta
+    index.mdxhalaman— overview app.gfs
+    dashboard.mdxhalaman
+    launch-game.mdxhalaman
+  games/
+    meta.jsonmeta— urutan 7 game di sidebar
+    spacequiz/
+      meta.jsonmeta
+      index.mdxhalaman— overview SpaceQuiz
+      cara-bermain.mdxhalaman
+      power-up.mdxhalaman
+      leaderboard.mdxhalaman
+      achievement.mdxhalaman
+    memoryquiz/
+      meta.jsonmeta
+      index.mdxhalaman
+      cara-bermain.mdxhalaman
+      level-kesulitan.mdxhalaman
+      tips-trik.mdxhalaman
+      achievement.mdxhalaman
+    crazyrace/
+      meta.jsonmeta
+      index.mdxhalaman
+      cara-bermain.mdxhalaman
+      mode-balapan.mdxhalaman
+      sistem-poin.mdxhalaman
+      leaderboard.mdxhalaman
+    quizrush/
+      meta.jsonmeta
+      index.mdxhalaman
+      cara-bermain.mdxhalaman
+      kategori-soal.mdxhalaman
+      power-rush.mdxhalaman
+      live-event.mdxhalaman
+    axiom/
+      meta.jsonmeta
+      index.mdxhalaman
+      cara-bermain.mdxhalaman
+      mode-soal.mdxhalaman
+      skor-xp.mdxhalaman
+      achievement.mdxhalaman
+    zigma/
+      meta.jsonmeta
+      index.mdxhalaman
+      cara-bermain.mdxhalaman
+      sistem-rpg.mdxhalaman
+      guild-party.mdxhalaman
+      pvp-ranking.mdxhalaman
+    nitroquiz/
+      meta.jsonmeta
+      index.mdxhalaman
+      cara-bermain.mdxhalaman
+      nitro-boost.mdxhalaman
+      speed-mode.mdxhalaman
+      leaderboard.mdxhalaman
+  akun/
+    meta.jsonmeta
+    profil.mdxhalamanshared
+    koin-reward.mdxhalamanshared
+    notifikasi.mdxhalamanshared
+    faq.mdxhalamanshared
+    kebijakan-privasi.mdxhalamanshared

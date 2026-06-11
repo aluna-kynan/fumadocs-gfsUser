@@ -1,0 +1,4 @@
+{
+  "title": "MemoryQuiz",
+  "children": ["index", "cara-bermain", "level-kesulitan", "tips-trik", "achievement"]
+}

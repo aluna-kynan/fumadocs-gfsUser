@@ -1,0 +1,4 @@
+{
+  "title": "Axiom",
+  "children": ["index", "cara-bermain", "mode-soal", "skor-xp", "achievement"]
+}

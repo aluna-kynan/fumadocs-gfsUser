@@ -1,0 +1,4 @@
+{
+  "title": "Games",
+  "children": ["spacequiz", "memoryquiz", "crazyrace", "quizrush", "axiom", "zigma", "nitroquiz"]
+}

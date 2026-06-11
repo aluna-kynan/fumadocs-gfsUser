@@ -1,0 +1,4 @@
+{
+  "title": "QuizRush",
+  "children": ["index", "cara-bermain", "kategori-soal", "power-rush", "live-event"]
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Account",
+  "children": ["profil", "koin-reward", "notifikasi", "faq", "kebijakan-privasi"]
+}

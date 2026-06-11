@@ -1,0 +1,4 @@
+{
+  "title": "SpaceQuiz",
+  "children": ["index", "cara-bermain", "power-up", "leaderboard", "achievement"]
+}
