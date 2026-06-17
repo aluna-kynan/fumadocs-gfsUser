@@ -1,0 +1,199 @@
+---
+title: Mulai dari Sini
+description: Panduan pertama untuk memulai perjalananmu di GameForSmart — dari login hingga menyelesaikan sesi game pertamamu.
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+GameForSmart adalah platform quiz gaming interaktif yang menggabungkan pembelajaran dengan pengalaman bermain yang seru. Kamu bisa bermain sendiri sekaligus jadi host, atau bergabung ke sesi yang dibuat orang lain.
+
+Halaman ini menjelaskan alur lengkap dari login hingga selesai mengerjakan sesi game pertamamu.
+
+---
+
+## Persyaratan
+
+Sebelum mulai, pastikan kamu punya:
+
+- Perangkat dengan browser modern (Chrome, Firefox, Edge, Safari)
+- Koneksi internet stabil
+- Akun Google atau email aktif untuk registrasi
+
+<Callout type="info">
+  GameForSmart bisa diakses langsung dari browser di HP maupun komputer. Tidak perlu install aplikasi.
+</Callout>
+
+---
+
+## Alur Lengkap
+
+<Steps>
+
+<Step>
+
+### Login ke Akun
+
+Setiap game di GameForSmart memerlukan login terlebih dahulu. Kamu akan diarahkan ke halaman login saat pertama kali membuka game.
+
+<Tabs items={['Login dengan Google', 'Login dengan Username']}>
+
+<Tab value="Login dengan Google">
+
+1. Klik tombol **Login dengan Google**
+2. Pilih akun Google yang ingin digunakan
+3. Izinkan akses — kamu akan langsung masuk
+
+</Tab>
+
+<Tab value="Login dengan Username">
+
+1. Masukkan **username** dan **password** akunmu
+2. Klik **Masuk**
+
+Belum punya akun? Lihat panduan lengkap pendaftaran di [halaman Akun](/docs/akun/profil).
+
+</Tab>
+
+</Tabs>
+
+</Step>
+
+<Step>
+
+### Homepage Game — Create atau Join Room
+
+Setelah login, kamu akan berada di halaman utama game dengan dua pilihan:
+
+- **Create Room** — buat sesi baru sebagai host
+- **Join Room** — bergabung ke sesi yang sudah ada
+
+</Step>
+
+<Step>
+
+### Bergabung ke Sesi (Join Room)
+
+Ada tiga cara untuk bergabung ke sesi yang dibuat orang lain:
+
+**1. Masukkan Room Code**
+Minta room code dari host, lalu masukkan di kolom yang tersedia di halaman game.
+
+**2. Gunakan Link Join**
+Minta link join dari host, buka di browser, dan kamu langsung masuk ke sesi.
+
+**3. Terima Invite**
+Jika kamu berada dalam satu grup dengan host (sebagai member, owner, admin) atau terdaftar sebagai teman:
+1. Buka [app.gameforsmart.com](https://app.gameforsmart.com)
+2. Cek notifikasi yang masuk
+3. Klik **Accept** untuk bergabung ke sesi
+
+<Callout type="info">
+  Notifikasi invite hanya muncul di app.gameforsmart.com, bukan di halaman game langsung.
+</Callout>
+
+</Step>
+
+<Step>
+
+### Bermain Sendiri (Host sekaligus Player)
+
+Jika ingin bermain sendiri tanpa teman, kamu perlu membuka **dua tab browser** sekaligus:
+
+1. Di tab pertama, klik **Create Room**
+2. Pilih quiz yang diinginkan dan atur settingan sesi
+3. Salin **link join** atau **room code** yang muncul
+4. Buka **tab baru**, buka game yang sama, lalu tempel link join atau masukkan room code
+5. Kembali ke **tab host** (tab pertama) → klik **Mulai**
+6. Pindah ke **tab player** (tab kedua) → mulai mengerjakan
+
+<Callout type="tip">
+  Gunakan dua jendela browser berdampingan agar lebih mudah berpindah antara tab host dan tab player.
+</Callout>
+
+</Step>
+
+<Step>
+
+### Mengerjakan Sesi
+
+Setelah sesi dimulai, alur pengerjaan berbeda tergantung game yang dimainkan:
+
+<Tabs items={['Game + Soal Bergantian', 'Game + Soal Bersamaan']}>
+
+<Tab value="Game + Soal Bergantian">
+
+Berlaku untuk: **SpaceQuiz, CrazyRace, MemoryQuiz, NitroQuiz, Axiom**
+
+Alurnya berulang seperti ini:
+
+1. **Selesaikan misi game** — mainkan game hingga misi selesai
+2. **Jawab 3 soal** — kerjakan 3 pertanyaan yang muncul
+3. **Kembali ke game** — lanjut misi berikutnya
+4. Ulangi hingga semua soal selesai
+
+</Tab>
+
+<Tab value="Game + Soal Bersamaan">
+
+Berlaku untuk: **QuizRush, Zigma**
+
+Game dan soal berlangsung **secara bersamaan** — kamu menjawab soal sambil memainkan game dalam satu layar.
+
+Host dapat memantau jalannya sesi secara real-time dari **halaman monitor**.
+
+</Tab>
+
+</Tabs>
+
+</Step>
+
+<Step>
+
+### Halaman Result
+
+Setelah sesi selesai, kamu akan diarahkan ke halaman **Result** yang menampilkan:
+
+- **Rank** — posisimu dibanding peserta lain
+- **Score** — total nilai yang dikumpulkan
+- **Jawaban Benar** — jumlah jawaban benar dari total soal
+- **Durasi** — waktu yang dihabiskan untuk menyelesaikan sesi
+
+Untuk melihat statistik lengkap permainanmu secara historis, klik tombol **Statistik**  akan diarahkan ke [app.gameforsmart.com](https://app.gameforsmart.com).
+
+</Step>
+
+</Steps>
+
+---
+
+## Mode per Game
+
+| Game | Alur Pengerjaan | Multiplayer |
+|------|----------------|-------------------|
+| SpaceQuiz | Game → 3 Soal → Game (berulang) | Tidak |
+| MemoryQuiz | Game → 3 Soal → Game (berulang) | Tidak |
+| CrazyRace | Game → 3 Soal → Game (berulang) | Tidak |
+| NitroQuiz | Game → 3 Soal → Game (berulang) | Tidak |
+| Axiom | Game → 3 Soal → Game (berulang) | Tidak |
+| QuizRush | Game + Soal sekaligus | Tidak |
+| Zigma | Game + Soal sekaligus |  Iya |
+
+---
+
+## Langkah Selanjutnya
+
+Pilih game yang ingin kamu pelajari lebih lanjut:
+
+- [SpaceQuiz](/docs/games/spacequiz) — space shooter + trivia, hindari asteroid dan tangkap reward untuk penuhi misi
+- [MemoryQuiz](/docs/games/memoryquiz) — puzzle memori sebelum menjawab soal
+- [CrazyRace](/docs/games/crazyrace) — balapan mobil antar sesi soal
+- [QuizRush](/docs/games/quizrush) — aksi dan soal berlangsung bersamaan
+- [NitroQuiz](/docs/games/nitroquiz) — balapan kart bertenaga nitro dari jawaban benar
+- [Zigma](/docs/games/zigma) — RPG quiz multiplayer, lawan pemain lain secara real-time
+- [Axiom](/docs/games/axiom) — space shooter melawan bos roket dan musnahkan meteor di angkasa
+
+<Callout type="tip">
+  Mau main bareng teman dan saling lihat progress? Coba **Zigma** — satu-satunya game di GameForSmart dengan mode multiplayer.
+</Callout>

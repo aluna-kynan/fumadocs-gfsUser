@@ -1,0 +1,95 @@
+---
+title: Groups
+description: Cara membuat, mengelola, dan bergabung ke grup di GameForSmart.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+Grup memungkinkan kamu mengumpulkan pemain dalam satu komunitas. Host bisa langsung mengirim invite sesi game ke seluruh anggota grup sekaligus. Buka menu **Groups** di sidebar [app.gameforsmart.com](https://app.gameforsmart.com).
+
+---
+
+## Membuat Grup
+
+1. Buka halaman **Groups**
+2. Klik tombol **Create Group**
+3. Isi formulir pengaturan grup:
+
+| Kolom | Keterangan |
+|-------|-----------|
+| Name | Nama grup (wajib diisi) |
+| Category | Kategori grup, misal: Others, Education, dll |
+| Type | Visibilitas grup (lihat di bawah) |
+| Description | Deskripsi singkat grup (opsional) |
+| Approval | Jika diaktifkan, setiap permintaan bergabung harus disetujui owner terlebih dahulu |
+
+4. Klik **Save** untuk membuat grup
+
+### Tipe Grup
+
+| Tipe | Keterangan |
+|------|-----------|
+| **Public** | Siapa saja bisa langsung bergabung tanpa persetujuan |
+| **Private** | Anggota baru harus mengirim request untuk bergabung |
+| **Secret** | Hanya bisa dimasuki via invite langsung dari owner/admin |
+
+---
+
+## Peran dalam Grup
+
+<Tabs items={['Owner', 'Admin', 'Member']}>
+
+<Tab value="Owner">
+
+Owner adalah pembuat grup dan memiliki akses penuh:
+
+- **Invite Games** — kirim invite sesi game ke seluruh anggota grup
+- **Add Member** — tambahkan anggota baru ke grup
+- **Jadikan Admin** — promosikan member menjadi admin
+- **Group Settings** — ubah nama, kategori, tipe, deskripsi, dan pengaturan approval grup
+
+</Tab>
+
+<Tab value="Admin">
+
+Admin memiliki sebagian besar akses owner:
+
+- **Invite Games** — kirim invite sesi game ke anggota grup
+- **Add Member** — tambahkan anggota baru
+
+<Callout type="info">
+  Admin tidak bisa mengubah pengaturan grup atau mengangkat admin lain. Hanya owner yang bisa melakukan itu.
+</Callout>
+
+</Tab>
+
+<Tab value="Member">
+
+Member adalah anggota biasa dalam grup:
+
+- Menerima notifikasi invite sesi game dari owner/admin
+- Klik **Leave Group** untuk keluar dari grup
+
+</Tab>
+
+</Tabs>
+
+---
+
+## Bergabung ke Grup
+
+Ada tiga cara bergabung ke grup:
+
+**1. Grup Public**
+Cari grup di halaman Groups, lalu langsung klik **Join**.
+
+**2. Grup Private**
+Kirim request bergabung — owner/admin akan menyetujui atau menolak permintaanmu.
+
+**3. Grup Secret**
+Kamu hanya bisa masuk jika mendapat invite langsung dari owner atau admin. Notifikasi invite akan muncul di ikon lonceng di [app.gameforsmart.com](https://app.gameforsmart.com).
+
+<Callout type="tip">
+  Bergabung ke grup memudahkan kamu menerima invite sesi game secara langsung — tanpa perlu meminta room code setiap kali.
+</Callout>

@@ -1,4 +1,6 @@
 {
   "title": "Getting Started",
-  "children": ["index", "daftar-akun", "cara-login", "navigasi-platform"]
+  "defaultOpen": true,
+  "collapsible": false,
+  "pages": ["index", "daftar-akun", "cara-login", "navigasi-platform"]
 }

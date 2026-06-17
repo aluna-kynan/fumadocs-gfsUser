@@ -1,4 +1,4 @@
 {
-  "title": "GameForSmart Docs",
-  "children": ["index", "getting-started", "app", "games", "akun"]
+  "title": "Docs",
+  "pages": ["getting-started", "akun", "app", "games"]
 }

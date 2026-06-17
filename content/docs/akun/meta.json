@@ -1,4 +1,4 @@
 {
   "title": "Account",
-  "children": ["profil", "koin-reward", "notifikasi", "faq", "kebijakan-privasi"]
+  "pages": ["profil", "friends", "groups", "statistik", "notifikasi", "keamanan"]
 }
