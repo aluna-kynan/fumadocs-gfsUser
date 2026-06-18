@@ -1,0 +1,125 @@
+---
+title: Panduan Host
+description: Cara membuat dan mengelola sesi CrazyRace sebagai host.
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Sebagai host, kamu bertugas membuat sesi, memilih quiz, mengatur pengaturan balapan, membagikan room code ke peserta, dan memulai game.
+
+---
+
+## Membuat Sesi
+
+<Steps>
+
+<Step>
+
+### Buka CrazyRace
+
+Buka [crazyrace.gameforsmart.com](https://crazyrace.gameforsmart.com) dan pastikan sudah login.
+
+</Step>
+
+<Step>
+
+### Klik Host Game
+
+Di halaman utama, klik tombol **Create Room** di sisi kiri.
+
+</Step>
+
+<Step>
+
+### Pilih Quiz
+
+Kamu akan diarahkan ke halaman **Select Quiz**. Temukan quiz yang ingin digunakan:
+
+- Gunakan kolom **Search Quiz** untuk mencari berdasarkan judul
+- Gunakan filter **All** untuk menyaring berdasarkan kategori (General, Math, Language, Science, History, Technology, dll)
+- Klik ikon ❤️ untuk menyimpan quiz ke Favorit
+- Klik **My Quizzes** di pojok kanan atas untuk melihat quiz buatanmu sendiri — quiz dibuat melalui [app.gameforsmart.com](https://app.gameforsmart.com), lihat panduannya di [halaman Quiz](/docs/app/quiz)
+
+Klik kartu quiz yang diinginkan untuk memilihnya.
+
+</Step>
+
+<Step>
+
+### Atur Pengaturan Sesi
+
+Setelah memilih quiz, muncul halaman **Pengaturan**:
+
+| Pengaturan | Keterangan |
+|-----------|-----------|
+| **Duration** | Batas waktu total sesi (contoh: 5 Minutes) |
+| **Questions** | Jumlah soal yang akan dimainkan |
+| **Sound** | Toggle untuk mengaktifkan atau menonaktifkan suara |
+| **Difficulty** | Pilih **Easy**, **Medium**, atau **Hard** — mempengaruhi jalur dan jumlah NPC |
+
+Setelah selesai, klik **Continue** untuk masuk ke lobby.
+
+</Step>
+
+<Step>
+
+### Bagikan Room Code ke Peserta
+
+Di halaman lobby host, tersedia:
+
+- **Room Code** — kode 6 digit yang bisa disalin
+- **QR Code** — bisa di-scan langsung oleh peserta
+- **Link Join** — contoh: `https://crazyrace.gameforsmart.com/join/723611`
+- **Invite Groups** — kirim invite langsung ke seluruh anggota grupmu
+- **Invite Friends** — kirim invite langsung ke teman yang kamu follow mutual
+
+Daftar peserta yang sudah bergabung akan muncul di sisi kanan beserta avatar mereka.
+
+<Callout type="tip">
+  Gunakan **Invite Groups** atau **Invite Friends** agar peserta bisa langsung bergabung tanpa perlu memasukkan room code secara manual.
+</Callout>
+
+</Step>
+
+<Step>
+
+### Mulai Sesi
+
+Setelah peserta siap, klik **START** untuk memulai balapan. Klik **Exit** untuk membatalkan sesi sebelum dimulai.
+
+</Step>
+
+</Steps>
+
+---
+
+## Monitor Sesi (Saat Game Berlangsung)
+
+Setelah sesi dimulai, host masuk ke halaman **monitor** yang menampilkan semua player secara real-time:
+
+- **Jumlah player** di pojok kiri atas
+- **Timer countdown** di tengah atas — sisa waktu sesi
+- Setiap kartu player menampilkan: **nama**, **mobil**, dan **progress soal**
+- Label **GAME** menunjukkan player sedang dalam fase balapan, label **QUIZ** menunjukkan player sedang mengerjakan soal
+
+Klik tombol **AKHIRI** di pojok kanan atas untuk mengakhiri sesi lebih awal.
+
+<Callout type="info">
+  Host tidak ikut bermain di halaman monitor — halaman ini hanya untuk memantau progress seluruh player secara real-time.
+</Callout>
+
+---
+
+## Halaman Result Host
+
+Setelah sesi selesai, host melihat **leaderboard** yang menampilkan:
+
+- **Podium juara** — kartu besar untuk pemain peringkat teratas
+- **Tabel lengkap** — kolom Juara, Pemain, Skor, dan Waktu untuk seluruh peserta
+
+| Tombol | Fungsi |
+|--------|--------|
+| **Beranda** | Kembali ke halaman utama CrazyRace |
+| **Mulai Ulang** | Jalankan ulang sesi dengan quiz yang sama |
+| **Statistik** | Buka halaman statistik detail di [app.gameforsmart.com](https://app.gameforsmart.com) |

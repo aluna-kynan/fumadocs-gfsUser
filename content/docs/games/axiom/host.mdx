@@ -1,0 +1,133 @@
+---
+title: Panduan Host
+description: Cara membuat dan mengelola sesi Axiom sebagai host.
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Sebagai host, kamu bertugas membuat sesi, memilih quiz, membagikan room code ke peserta, dan memulai game.
+
+---
+
+## Membuat Sesi
+
+<Steps>
+
+<Step>
+
+### Buka Axiom
+
+Buka [axiom.gameforsmart.com](https://axiom.gameforsmart.com) dan pastikan sudah login dengan akun GameForSmart.
+
+</Step>
+
+<Step>
+
+### Klik Create Game
+
+Di halaman utama, klik tombol **CREATE GAME** di sisi kiri.
+
+</Step>
+
+<Step>
+
+### Pilih Quiz
+
+Kamu akan diarahkan ke halaman **Select Quiz**. Temukan quiz yang ingin digunakan:
+
+- Gunakan kolom **Search** untuk mencari berdasarkan judul quiz
+- Gunakan filter **ALL** untuk menyaring berdasarkan kategori (General, Math, Language, Science, History, Technology, dll)
+- Klik ikon ❤️ untuk menyimpan quiz ke Favorit
+- Klik **MY QUIZ** di pojok kanan atas untuk melihat quiz buatanmu sendiri — quiz dibuat melalui [app.gameforsmart.com](https://app.gameforsmart.com), lihat panduannya di [halaman Quiz](/docs/app/quiz)
+
+Setelah menemukan quiz yang diinginkan, klik **START**.
+
+</Step>
+
+<Step>
+
+### Atur Pengaturan Sesi
+
+Setelah memilih quiz, muncul halaman **Pengaturan** khusus untuk host:
+
+| Pengaturan | Keterangan |
+|-----------|-----------|
+| **Pertanyaan** | Jumlah soal yang akan dimainkan dalam sesi |
+| **Durasi** | Batas waktu total sesi (contoh: 5 Menit) |
+| **Suara** | Toggle untuk mengaktifkan atau menonaktifkan suara |
+| **Tingkat Kesulitan** | Pilih **Mudah**, **Sedang**, atau **Sulit** — lihat perbedaan detail tiap level di [Mekanik & Tingkat Kesulitan](/docs/games/axiom/mekanik) |
+
+Setelah selesai mengatur, klik **LANJUTKAN** untuk masuk ke lobby.
+
+</Step>
+
+<Step>
+
+### Bagikan Room Code ke Peserta
+
+Setelah quiz dipilih, kamu masuk ke halaman **lobby host** yang menampilkan:
+
+- **Room Code** — kode 6 digit yang bisa disalin
+- **QR Code** — bisa di-scan peserta langsung dari perangkat mereka
+- **Link Join** — contoh: `https://axiom.gameforsmart.com/join/967346` — bisa disalin dan dibagikan
+- **Invite Groups** — kirim invite langsung ke seluruh anggota grupmu
+- **Invite Friends** — kirim invite langsung ke teman yang kamu follow
+
+Bagikan salah satu dari ketiganya ke peserta. Daftar peserta yang sudah bergabung akan muncul di sisi kanan layar beserta pesawat pilihan mereka.
+
+<Callout type="tip">
+  Kamu juga bisa mengirim invite langsung ke teman atau anggota grup dari [app.gameforsmart.com](https://app.gameforsmart.com). Peserta yang menerima invite tidak perlu memasukkan room code secara manual.
+</Callout>
+
+</Step>
+
+<Step>
+
+### Mulai Sesi
+
+Setelah semua peserta masuk dan siap, klik tombol **START** untuk memulai sesi. Semua player akan langsung masuk ke misi pertama.
+
+Jika ingin membatalkan sesi sebelum dimulai, klik tombol **EXIT**.
+
+</Step>
+
+</Steps>
+
+---
+
+## Monitor Sesi (Saat Game Berlangsung)
+
+Setelah sesi dimulai, host masuk ke halaman **monitor** yang menampilkan semua player secara real-time:
+
+- **Jumlah player** ditampilkan di pojok kiri atas
+- **Timer countdown** di tengah atas — menunjukkan sisa waktu sesi
+- Setiap kartu player menampilkan: **nama**, **pesawat**, dan **progress soal** (contoh: 0/5)
+- Label **GAME** di bawah tiap kartu menunjukkan player sedang dalam fase misi, sedangkan label **QUIZ** menunjukkan player sedang mengerjakan soal
+
+Klik tombol **AKHIRI** di pojok kanan atas untuk mengakhiri sesi lebih awal sebelum waktu habis.
+
+<Callout type="info">
+  Host tidak ikut bermain di halaman monitor — halaman ini hanya untuk memantau progress seluruh player secara real-time.
+</Callout>
+
+---
+
+## Halaman Result Host
+
+Setelah semua player menyelesaikan sesi, host akan melihat halaman result berupa **leaderboard** yang menampilkan:
+
+- **Podium juara** — kartu besar untuk pemain peringkat teratas
+- **Tabel lengkap** — kolom Juara, Pemain, Skor, dan Waktu untuk seluruh peserta
+
+### Tombol di Halaman Result Host
+
+| Tombol | Fungsi |
+|--------|--------|
+| **Beranda** | Kembali ke halaman utama Axiom |
+| **Mulai Ulang** | Jalankan ulang sesi dengan quiz yang sama |
+| **Statistik** | Buka halaman statistik detail di [app.gameforsmart.com](https://app.gameforsmart.com) |
+
+<Callout type="tip">
+  Gunakan **Mulai Ulang** jika ingin mengulang sesi yang sama tanpa harus memilih quiz dari awal — praktis untuk sesi latihan berulang.
+</Callout>

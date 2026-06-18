@@ -1,0 +1,114 @@
+---
+title: Mekanik & Tingkat Kesulitan
+description: Penjelasan detail sistem permainan Axiom — musuh, difficulty, boss, dan upgrade senjata.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Halaman ini menjelaskan mekanik permainan Axiom secara detail — mulai dari perbedaan tiap tingkat kesulitan, jenis musuh, sistem nyawa, boss fight, hingga sistem upgrade senjata.
+
+---
+
+## Tingkat Kesulitan
+
+Host memilih tingkat kesulitan saat membuat sesi. Pilihan ini mempengaruhi jumlah musuh yang muncul dan kecepatan gulir layar:
+
+| Elemen | Easy | Medium | Hard |
+|--------|------|--------|------|
+| Asteroid Bergerak | 8 | 15 | 25 |
+| Basic Enemy | 0 | 9 | 15 |
+| Sniper Enemy | 2 | 3 | 5 |
+| Spinner (Squadron) | 6 | 3 | 5 |
+| Kecepatan Scroll | 3 | 5 | 7 |
+
+<Callout type="tip">
+  Untuk sesi pertama atau pemain baru, gunakan **Easy** agar player bisa memahami mekanik game sebelum menghadapi musuh yang lebih banyak dan cepat.
+</Callout>
+
+---
+
+## Jenis Musuh
+
+### Musuh Aktif
+
+Musuh aktif berinteraksi langsung dengan pesawatmu dan harus dihancurkan atau dihindari:
+
+| Musuh | HP | Perilaku | Damage |
+|-------|----|----------|--------|
+| **Basic Enemy** | 50 | Mengejar posisi pemain secara aktif | Tabrakan: -2 HP |
+| **Sniper Enemy** | 80 | Muncul dari atas, berhenti, membidik, lalu menembak peluru presisi | Tabrakan: -2 HP · Peluru: -1 HP |
+| **Spinner / Squadron** | 40 | Muncul dalam kelompok formasi dengan pola Sine Wave, Cross, atau U-Turn | Tabrakan: -2 HP |
+| **Asteroid** | 60–150 | Rintangan jatuh yang harus dihancurkan atau dihindari | Tabrakan: -3 HP |
+
+### Dekorasi Bergerak
+
+Beberapa elemen visual di latar belakang juga memiliki interaksi mekanis:
+
+| Elemen | Interaksi |
+|--------|-----------|
+| **Space Station 1** | Menembakkan peluru ke arah pemain (-1 HP per peluru) |
+| **Space Station 2** | Bergerak kamikaze mengejar pemain (-2 HP jika menabrak) |
+| **Batu (Rock)** | Hiasan murni — meluncur melewati layar tanpa interaksi |
+| **Efek Visual** | Booster, asap, ledakan — hanya estetika, tidak ada interaksi |
+
+---
+
+## Sistem Nyawa & Kerusakan
+
+Pemain memiliki maksimal **10 nyawa**, dengan masing-masing nyawa memiliki **100 HP**:
+
+| Sumber Damage | HP yang Berkurang |
+|---------------|------------------|
+| Tabrakan Asteroid | -3 HP |
+| Tabrakan Musuh / Kamikaze | -2 HP |
+| Terkena Peluru Musuh | -1 HP |
+| Terkena Laser Boss | -1 hingga -3 HP per tick (tergantung kesulitan) |
+
+<Callout type="info">
+  Setelah kehilangan satu nyawa, pemain mendapat **imunitas selama 3 detik** — selama waktu ini tidak ada kerusakan yang bisa diterima. Upgrade senjata hanya reset ke Level 1 saat kehilangan nyawa, bukan saat HP berkurang biasa.
+</Callout>
+
+---
+
+## Sistem Upgrade Senjata
+
+Senjata pesawatmu bisa ditingkatkan hingga **Level 4**. Power-up mulai jatuh setiap 6 detik setelah 5 detik pertama permainan:
+
+| Level | Senjata |
+|-------|---------|
+| **Level 1** (Base) | Tembakan Spread 3 peluru di tengah |
+| **Level 2** | Spread kiri & kanan + tembakan tambahan di tengah |
+| **Level 3** | Menambahkan senjata Laser (tembakan cepat lurus) di tengah |
+| **Level 4** (Max) | Menambahkan senjata Magnetic — peluru mencari musuh terdekat otomatis |
+
+---
+
+## Alur Waktu Permainan
+
+| Waktu | Yang Terjadi |
+|-------|-------------|
+| **0 – 5 detik** | Dodge Phase — belum ada power-up, asteroid mulai berjatuhan |
+| **> 5 detik** | Musuh mulai muncul acak dari antrean dengan jeda 2 detik. Power-up senjata mulai jatuh tiap 6 detik |
+| **Wave Clear** | Setelah semua antrean musuh habis dan layar bersih, Boss muncul |
+| **10 detik terakhir (Hard)** | Boss dirancang muncul lebih intens di akhir sesi |
+
+---
+
+## Boss Fight
+
+Boss muncul setelah semua gelombang musuh berhasil dibersihkan. Sebelum boss masuk, muncul animasi peringatan **⚠️ WARNING ⚠️** selama 3 detik.
+
+Pertempuran boss berlangsung dalam 3 fase:
+
+### Fase 1 — HP 100% hingga 75%
+Boss menembakkan peluru kuning dari **4 turret** secara cepat ke arah pemain.
+
+### Fase 2 — HP di bawah 75%
+Boss memanggil **2 Minion** (masing-masing HP: 400) dan mengaktifkan **perisai** — boss tidak bisa diserang sampai kedua minion dihancurkan terlebih dahulu.
+
+### Fase 3 — Rage Mode
+Setelah kedua minion hancur, boss memasuki Rage Mode: bergerak lebih liar mengejar pemain dan menembakkan **Laser Merah Raksasa** setiap 2 detik.
+
+<Callout type="info">
+  Prioritaskan menghancurkan kedua Minion di Fase 2 secepat mungkin agar boss kembali bisa diserang. Selama perisai aktif, semua tembakan ke boss tidak akan berpengaruh.
+</Callout>

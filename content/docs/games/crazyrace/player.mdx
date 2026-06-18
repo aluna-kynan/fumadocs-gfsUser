@@ -1,0 +1,108 @@
+---
+title: Panduan Player
+description: Cara bergabung dan bermain CrazyRace sebagai player.
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Sebagai player, kamu bergabung ke sesi yang dibuat host lalu menyelesaikan fase balapan dan menjawab soal secara bergantian.
+
+---
+
+## Bergabung ke Sesi
+
+<Steps>
+
+<Step>
+
+### Buka CrazyRace
+
+Buka [crazyrace.gameforsmart.com](https://crazyrace.gameforsmart.com) dan pastikan sudah login.
+
+</Step>
+
+<Step>
+
+### Masukkan Room Code
+
+Di halaman utama, masukkan **Room Code** yang diberikan host ke kolom di sisi kanan, lalu klik **JOIN**.
+
+Cara lain untuk bergabung:
+- **Scan QR Code** yang ditampilkan host
+- **Buka link join** yang dibagikan host (contoh: `https://crazyrace.gameforsmart.com/join/723611`)
+- **Terima invite** dari notifikasi di [app.gameforsmart.com](https://app.gameforsmart.com)
+
+</Step>
+
+<Step>
+
+### Pilih Mobil di Lobby
+
+Setelah masuk, kamu berada di halaman lobby yang menampilkan semua player yang sudah bergabung beserta mobil masing-masing. Label **YOU** menandai kartumu.
+
+Klik tombol **CHOOSE CAR** untuk mengganti mobil yang akan kamu gunakan selama balapan.
+
+<Callout type="info">
+  Tunggu hingga host menekan tombol START. Sesi tidak bisa dimulai dari sisi player.
+</Callout>
+
+</Step>
+
+</Steps>
+
+---
+
+## Alur Permainan
+
+### Fase Balapan
+
+Setelah sesi dimulai, kamu langsung masuk ke lintasan balapan bergaya retro:
+
+- **Kemudi kiri/kanan** — gunakan tombol panah **←** dan **→** di pojok kiri bawah, atau tombol keyboard **A/D** atau **panah kiri/kanan**
+- **Gas/Rem** — gunakan tombol **↑** dan **↓** di pojok kanan bawah, atau tombol keyboard **W/S** atau **panah atas/bawah**
+- **Speedometer** di pojok kanan atas menunjukkan kecepatan mobilmu saat ini
+- **Timer** di tengah atas menunjukkan sisa waktu sesi
+- Hindari kendaraan NPC yang memenuhi jalan — bertabrakan akan memperlambat mobilmu
+
+Jalur dan jumlah NPC bergantung pada tingkat kesulitan yang dipilih host:
+
+| Kesulitan | Kondisi Jalur | NPC |
+|-----------|--------------|-----|
+| Easy | Lurus | 35 mobil |
+| Medium | Banyak belokan tajam | 65 mobil |
+| Hard | Belokan tajam + tanjakan + turunan | 100 mobil |
+
+### Fase Soal
+
+Setelah fase balapan selesai, layar berganti ke tampilan soal:
+
+- Ditampilkan **3 soal** secara berurutan
+- Header menampilkan **nomor soal / total soal**, **timer**, dan **score saat ini**
+- Soal bisa berupa teks maupun gambar dengan 4 pilihan jawaban **(A, B, C, D)**
+- Pilih jawaban sebelum timer habis
+- Setelah 3 soal selesai, kamu kembali ke fase balapan
+
+Pola ini berulang hingga semua soal selesai atau waktu habis.
+
+---
+
+## Halaman Result
+
+Setelah sesi selesai, kamu diarahkan ke halaman result:
+
+| Info | Keterangan |
+|------|-----------|
+| **Rank** | Posisimu dibanding peserta lain |
+| **Score** | Total poin yang kamu kumpulkan |
+| **Correct** | Jumlah jawaban benar dari total soal |
+| **Time** | Total durasi pengerjaan sesi |
+
+| Tombol | Fungsi |
+|--------|--------|
+| **Home** | Kembali ke halaman utama CrazyRace |
+| **Statistics** | Buka halaman statistik detail di [app.gameforsmart.com](https://app.gameforsmart.com) |
+
+<Callout type="tip">
+  Klik **Statistics** untuk melihat detail jawaban per soal dan mengunduh hasilnya dalam format PDF.
+</Callout>

@@ -1,0 +1,105 @@
+---
+title: Quiz
+description: Cara menjelajahi, membuat, dan mengelola quiz di app.gameforsmart.com.
+---
+ 
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+ 
+Halaman Quiz adalah tempat kamu menemukan semua quiz yang tersedia di platform, membuat quiz baru, serta mengelola quiz milikmu. Buka menu **Quiz** di sidebar [app.gameforsmart.com](https://app.gameforsmart.com).
+ 
+---
+ 
+## Tab Quiz
+ 
+Menampilkan seluruh quiz publik dari semua pengguna di platform. Setiap kartu quiz menampilkan:
+ 
+- **Kategori** dan **bahasa** quiz
+- **Nama pembuat** quiz
+- **Jumlah soal**
+- **Jumlah kali dimainkan**
+Tersedia dua aksi per quiz:
+ 
+| Tombol | Fungsi |
+|--------|--------|
+| **Host** | Buka halaman pembuatan sesi — pilih game, atur settingan, lalu mulai |
+| **Tryout** | Coba quiz langsung sendirian tanpa membuat sesi resmi |
+ 
+### Filter dan Pencarian
+ 
+- **Category** — filter quiz berdasarkan kategori (Umum, Matematika, Bahasa, Sains, Sejarah, dll)
+- **Language** — filter berdasarkan bahasa quiz
+- **Search** — cari quiz berdasarkan judul (tekan **K** atau klik kolom pencarian)
+---
+ 
+## Tab My Quiz
+ 
+Menampilkan semua quiz yang **kamu buat sendiri**. Dari sini kamu bisa mengedit, menghapus, atau langsung meng-host quiz milikmu.
+ 
+---
+ 
+## Tab Favorite
+ 
+Menampilkan quiz yang kamu tandai sebagai favorit untuk akses lebih cepat.
+ 
+---
+ 
+## Membuat Quiz Baru
+ 
+<Steps>
+<Step>
+### Klik Create Quiz
+ 
+Klik tombol **+ Create Quiz** di pojok kanan atas halaman Quiz.
+ 
+</Step>
+<Step>
+### Isi informasi quiz
+ 
+Lengkapi detail quiz:
+- **Judul** quiz
+- **Kategori** (Umum, Matematika, Bahasa, Sains, Teknologi, dll)
+- **Bahasa** soal
+- **Deskripsi** (opsional)
+</Step>
+<Step>
+### Tambahkan soal
+ 
+Tambahkan soal satu per satu. Setiap soal bisa berupa:
+- Pilihan ganda (A, B, C, D)
+- Soal bergambar — tambahkan gambar pada pertanyaan maupun pilihan jawaban
+Tentukan jawaban yang benar untuk setiap soal.
+ 
+</Step>
+<Step>
+### Simpan quiz
+ 
+Setelah semua soal ditambahkan, simpan quiz. Quiz akan muncul di tab **My Quiz** dan bisa langsung di-host.
+ 
+</Step>
+</Steps>
+---
+ 
+## Memulai Sesi dari Quiz
+ 
+<Tabs items={['Host Sesi', 'Tryout']}>
+ 
+<Tab value="Host Sesi">
+1. Temukan quiz yang ingin digunakan
+2. Klik tombol **Host**
+3. Pilih game yang ingin digunakan (SpaceQuiz, CrazyRace, NitroQuiz, dll)
+4. Atur settingan sesi sesuai kebutuhan
+5. Bagikan **room code** atau **link join** ke peserta
+6. Klik **Mulai** untuk memulai sesi
+</Tab>
+<Tab value="Tryout">
+1. Temukan quiz yang ingin dicoba
+2. Klik tombol **Tryout**
+3. Kamu langsung masuk ke sesi solo tanpa perlu membuat room — cocok untuk latihan atau preview soal
+</Tab>
+</Tabs>
+<Callout type="tip">
+  Gunakan fitur **Tryout** sebelum meng-host sesi resmi untuk memastikan soal dan alur quiz sudah sesuai.
+</Callout>
+ 
