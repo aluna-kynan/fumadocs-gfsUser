@@ -1,4 +1,4 @@
 {
   "title": "CrazyRace",
-  "children": ["index", "cara-bermain", "mode-balapan", "sistem-poin", "leaderboard"]
+  "children": ["index", "host", "mekanik", "player"]
 }

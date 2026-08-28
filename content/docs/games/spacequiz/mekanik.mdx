@@ -1,0 +1,28 @@
+---
+title: Mekanik & Tingkat Kesulitan
+description: Penjelasan tentang mekanik dan sistem perhitungan skor di SpaceQuiz.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+SpaceQuiz menggabungkan adrenalin game *space shooter* dengan asah otak dari *trivia quiz*.
+
+---
+
+## Alur Permainan
+
+1. **Obstacle Phase (Fase Rintangan):** Pesawatmu akan melaju kencang ke depan. Kamu harus bermanuver menghindari asteroid dan musuh luar angkasa. Jika tertabrak, kamu mungkin akan kehilangan waktu atau nyawa.
+2. **Quiz Phase (Fase Kuis):** Setelah beberapa detik, rintangan akan berhenti dan pertanyaan akan muncul di bagian atas layar.
+3. **Shooting Answer:** Tembak objek (musuh/planet) yang mewakili opsi jawaban yang benar.
+
+## Sistem Skor
+
+Total skor yang didapatkan dihitung berdasarkan:
+
+- **Ketepatan Jawaban:** Menjawab benar memberikan poin utama.
+- **Kecepatan Menjawab:** Semakin cepat kamu menembak jawaban yang benar, semakin besar poin bonus yang didapat.
+- **Survival Bonus:** Berhasil melewati *Fase Rintangan* tanpa tertabrak akan memberikan bonus multiplier pada skormu.
+
+<Callout title="Tips Jago" type="info">
+Prioritaskan keselamatan pesawatmu! Jika kamu tertabrak asteroid, kamu mungkin akan terlambat melihat soal dan didahului oleh pemain lain.
+</Callout>

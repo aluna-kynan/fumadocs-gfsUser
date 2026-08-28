@@ -1,16 +1,15 @@
 ---
 title: Panduan Player
-description: Cara bergabung dan bermain MemoryQuiz sebagai player.
+description: Cara bergabung dan bermain di MemoryQuiz sebagai player.
 ---
 
 import { Step, Steps } from 'fumadocs-ui/components/steps';
-import { Callout } from 'fumadocs-ui/components/callout';
 
-Sebagai player, kamu bergabung ke sesi yang dibuat host lalu menyelesaikan fase puzzle kartu memori dan menjawab soal secara bergantian.
+Sebagai pemain (player), tugas utamamu adalah bergabung ke sesi yang dibuat Host, mengingat posisi gambar di setiap kartu, dan mencocokkannya untuk membuka pertanyaan!
 
 ---
 
-## Bergabung ke Sesi
+## Bergabung ke Game
 
 <Steps>
 
@@ -18,25 +17,16 @@ Sebagai player, kamu bergabung ke sesi yang dibuat host lalu menyelesaikan fase 
 
 ### Buka MemoryQuiz
 
-Buka [memoryquiz.gameforsmart.com](https://memoryquiz.gameforsmart.com) dan pastikan sudah login dengan akun GameForSmart.
+Buka [memoryquiz.gameforsmart.com](https://memoryquiz.gameforsmart.com) dan lakukan Login.
 
 </Step>
 
 <Step>
 
-### Masukkan Room Code & Pilih Avatar
+### Masukkan Room Code
 
-Di halaman **Join Room**, kamu akan melihat:
-
-- Nama akunmu di bagian **Playing As**
-- Kolom **Room Code** — masukkan kode 6 digit dari host, atau klik **Scan** untuk scan QR Code
-- **Choose Avatar** — pilih avatar yang akan mewakilimu selama sesi dari pilihan yang tersedia
-
-Setelah mengisi room code dan memilih avatar, klik **JOIN ROOM**.
-
-Cara lain untuk bergabung:
-- **Buka link join** yang dibagikan host
-- **Terima invite** dari notifikasi di [app.gameforsmart.com](https://app.gameforsmart.com)
+Di halaman utama, cari bagian **Join Game**.
+Masukkan 6-digit **Room Code** yang diberikan oleh Host.
 
 </Step>
 
@@ -44,13 +34,7 @@ Cara lain untuk bergabung:
 
 ### Tunggu di Lobby
 
-Setelah masuk, kamu berada di halaman lobby yang menampilkan semua player yang sudah bergabung. Label **YOU** menandai namamu.
-
-Teks **WAITING FOR HOST TO START THE GAME...** menandakan sesi belum dimulai. Klik **LEAVE ROOM** jika ingin keluar dari sesi.
-
-<Callout type="info">
-  Sesi tidak bisa dimulai dari sisi player — tunggu hingga host menekan tombol START.
-</Callout>
+Setelah berhasil bergabung, kamu akan masuk ke layar Lobby. Bersiaplah, game akan otomatis dimulai ketika Host menekan tombol Start!
 
 </Step>
 
@@ -58,69 +42,10 @@ Teks **WAITING FOR HOST TO START THE GAME...** menandakan sesi belum dimulai. Kl
 
 ---
 
-## Alur Permainan
+## Cara Menjawab Soal
 
-### Fase Memory (Cocokkan Kartu)
+Di MemoryQuiz, soal kuis disembunyikan di balik permainan kartu memori:
 
-Setelah sesi dimulai, kamu masuk ke papan kartu memori:
-
-- Semua kartu ditampilkan dalam keadaan tertutup (ditandai dengan tanda tanya).
-- Pada awal fase, seluruh kartu akan terbuka selama beberapa detik agar pemain dapat mengingat posisi setiap gambar.
-- Setelah waktu menghafal selesai, kartu akan tertutup kembali.
-- Pemain harus membuka dua kartu untuk mencari pasangan gambar yang sama.
-- Header menampilkan:
-  - **TIME** → sisa waktu yang tersedia.
-  - **MATCHES** → jumlah pasangan yang berhasil ditemukan (contoh: 0/6).
-- Jika dua kartu yang dipilih cocok, pasangan tersebut akan tetap terbuka dan nilai **MATCHES** bertambah.
-- Jika tidak cocok, kartu akan ditutup kembali dan jumlah kesalahan bertambah.
-- Setelah pemain melakukan 3 kali kesalahan, seluruh kartu akan diacak ulang, kemudian:
-  - Semua kartu ditampilkan terbuka sebentar untuk memberi kesempatan mengingat posisi baru.
-  - Kartu kembali ditutup.
-- Permainan dilanjutkan dengan susunan kartu yang baru.
-- Temukan semua pasangan sebelum waktu habis untuk menyelesaikan fase memory.
-
-Jumlah kartu tergantung tingkat kesulitan yang dipilih host:
-
-| Difficulty | Pasangan | Total Kartu |
-|-----------|----------|-------------|
-| Easy | 6 pasang | 12 kartu |
-| Medium | 8 pasang | 16 kartu |
-| Hard | 10 pasang | 20 kartu |
-
-<Callout type="tip">
-  Saat kartu terbuka di awal, fokus perhatikan posisi gambar yang sama — jangan langsung klik, gunakan waktu itu untuk menghafal dulu.
-</Callout>
-
-### Fase Soal
-
-Setelah semua pasangan kartu berhasil ditemukan, layar berganti ke tampilan soal:
-
-- Ditampilkan **3 soal** secara berurutan
-- Setiap soal menampilkan **nomor soal / total soal**, **timer**, dan **score saat ini**
-- Soal bisa berupa teks maupun gambar dengan 4 pilihan jawaban **(A, B, C, D)**
-- Pilih jawaban sebelum timer habis
-- Setelah 3 soal selesai, kamu kembali ke fase memory
-
-Pola ini berulang hingga semua soal dalam quiz habis.
-
----
-
-## Halaman Result
-
-Setelah semua soal selesai, kamu diarahkan ke halaman result yang menampilkan:
-
-| Info | Keterangan |
-|------|-----------|
-| **Rank** | Posisimu dibanding peserta lain |
-| **Score** | Total poin yang kamu kumpulkan |
-| **Correct** | Jumlah jawaban benar dari total soal |
-| **Time** | Total durasi pengerjaan sesi |
-
-| Tombol | Fungsi |
-|--------|--------|
-| **Home** | Kembali ke halaman utama MemoryQuiz |
-| **Statistics** | Buka halaman statistik detail di [app.gameforsmart.com](https://app.gameforsmart.com) |
-
-<Callout type="tip">
-  Klik **Statistics** untuk melihat detail jawaban per soal lengkap dengan jawaban yang benar. Hasil juga bisa diunduh dalam format PDF.
-</Callout>
+1. **Fase Mencocokkan:** Tap/klik pada dua kartu yang tertutup untuk membalikkannya. Jika gambarnya sama, kartu tersebut akan cocok.
+2. **Fase Kuis:** Setelah berhasil mencocokkan sepasang kartu, soal kuis akan terbuka!
+3. **Pilih Jawaban:** Baca soal dengan saksama dan pilih satu dari empat opsi (A, B, C, D) yang menurutmu benar.

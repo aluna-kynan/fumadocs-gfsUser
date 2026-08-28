@@ -6,7 +6,7 @@ description: Cara membuat dan mengelola sesi MemoryQuiz sebagai host.
 import { Step, Steps } from 'fumadocs-ui/components/steps';
 import { Callout } from 'fumadocs-ui/components/callout';
 
-Sebagai host, kamu bertugas membuat sesi, memilih quiz, mengatur sesi, membagikan room code ke peserta, dan memulai game.
+Sebagai host, kamu bertugas membuat sesi, memilih kuis, membagikan room code ke peserta, dan memulai game.
 
 ---
 
@@ -24,9 +24,9 @@ Buka [memoryquiz.gameforsmart.com](https://memoryquiz.gameforsmart.com) dan past
 
 <Step>
 
-### Klik Host Game
+### Klik Create Game
 
-Di halaman utama, klik tombol **HOST** untuk membuat sesi baru.
+Di halaman utama, klik tombol **CREATE GAME** untuk membuat room baru.
 
 </Step>
 
@@ -36,28 +36,8 @@ Di halaman utama, klik tombol **HOST** untuk membuat sesi baru.
 
 Kamu akan diarahkan ke halaman **Select Quiz**. Temukan quiz yang ingin digunakan:
 
-- Gunakan kolom **Search Quiz...** untuk mencari berdasarkan judul
-- Gunakan filter **All** untuk menyaring berdasarkan kategori
-- Klik ikon ❤️ untuk menyimpan quiz ke Favorit
-- Klik ikon **My Quizzes** di pojok kanan atas untuk melihat quiz buatanmu sendiri — quiz dibuat melalui [app.gameforsmart.com](https://app.gameforsmart.com), lihat panduannya di [halaman Quiz](/docs/app/quiz)
-
-Klik kartu quiz yang diinginkan untuk memilihnya.
-
-</Step>
-
-<Step>
-
-### Atur Pengaturan Sesi
-
-Setelah memilih quiz, muncul halaman pengaturan sesi:
-
-| Pengaturan | Keterangan |
-|-----------|-----------|
-| **Duration** | Batas waktu total sesi (contoh: 5 Min) |
-| **Questions** | Jumlah soal yang akan dimainkan |
-| **Difficulty** | **Easy** (12 kartu) · **Medium** (16 kartu) · **Hard** (20 kartu) |
-
-Setelah selesai, klik **CREATE ROOM** untuk masuk ke lobby. Klik **Back** untuk kembali ke halaman pemilihan quiz.
+- Gunakan kolom **Search** untuk mencari kuis berdasarkan judul.
+- Setelah ketemu, klik **Select** pada kuis tersebut.
 
 </Step>
 
@@ -65,19 +45,8 @@ Setelah selesai, klik **CREATE ROOM** untuk masuk ke lobby. Klik **Back** untuk 
 
 ### Bagikan Room Code ke Peserta
 
-Di halaman lobby host terdapat:
-
-- **Room Code** — kode 6 digit yang bisa disalin
-- **QR Code** — bisa di-scan peserta langsung dari perangkat mereka
-- **Link Join** — contoh: `https://memoryquiz.gameforsmart.com/player/447802/waiting`
-- **Invite Groups** — kirim invite langsung ke seluruh anggota grupmu
-- **Invite Friends** — kirim invite langsung ke teman yang kamu follow
-
-Di sisi kanan lobby terlihat semua player yang sudah bergabung beserta avatar mereka, beserta info **durasi** dan **jumlah soal** sesi di bagian atas.
-
-<Callout type="tip">
-  Gunakan **Invite Groups** atau **Invite Friends** untuk mengundang langsung tanpa perlu membagikan room code secara manual.
-</Callout>
+Setelah kuis dipilih, kamu akan masuk ke halaman Lobby. Di sini, akan muncul **Room Code** (contoh: `123456`).
+Bagikan kode ini kepada para peserta agar mereka bisa bergabung.
 
 </Step>
 
@@ -85,7 +54,7 @@ Di sisi kanan lobby terlihat semua player yang sudah bergabung beserta avatar me
 
 ### Mulai Sesi
 
-Setelah semua peserta siap, klik **START** untuk memulai game. Klik **EXIT** untuk membatalkan sesi sebelum dimulai.
+Tunggu hingga semua peserta masuk ke dalam Lobby. Jika semua sudah siap, klik **START GAME** untuk memulai kuis.
 
 </Step>
 
@@ -93,32 +62,6 @@ Setelah semua peserta siap, klik **START** untuk memulai game. Klik **EXIT** unt
 
 ---
 
-## Monitor Sesi (Saat Game Berlangsung)
+## Memantau Sesi (Saat Game Berlangsung)
 
-Setelah sesi dimulai, host masuk ke halaman **monitor** yang menampilkan semua player secara real-time:
-
-- **Jumlah player** ditampilkan di pojok kiri atas
-- **Timer countdown** — menunjukkan sisa waktu sesi
-- Setiap kartu player menampilkan **nama**, **avatar**, dan **progress**
-- Label **GAME** menunjukkan player sedang dalam fase memory, label **QUIZ** menunjukkan player sedang mengerjakan soal
-
-Klik tombol **AKHIRI** untuk mengakhiri sesi lebih awal.
-
-<Callout type="info">
-  Host tidak ikut bermain di halaman monitor — halaman ini hanya untuk memantau progress seluruh player secara real-time.
-</Callout>
-
----
-
-## Halaman Result Host
-
-Setelah sesi selesai, host melihat halaman **leaderboard** yang menampilkan:
-
-- **Podium juara** — kartu besar untuk pemain peringkat teratas
-- **Tabel lengkap** — kolom Juara, Pemain, Skor, dan Waktu untuk seluruh peserta
-
-| Tombol | Fungsi |
-|--------|--------|
-| **Beranda** | Kembali ke halaman utama MemoryQuiz |
-| **Mulai Ulang** | Jalankan ulang sesi dengan quiz yang sama |
-| **Statistik** | Buka halaman statistik detail di [app.gameforsmart.com](https://app.gameforsmart.com) |
+Saat game berjalan, layar Host akan menampilkan **Live Leaderboard** yang diperbarui secara real-time. Kamu bisa melihat siapa yang memiliki memori paling tajam dan menjawab dengan benar!

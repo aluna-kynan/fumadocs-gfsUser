@@ -1,0 +1,28 @@
+---
+title: Mekanik & Tingkat Kesulitan
+description: Penjelasan tentang sistem RPG dan Damage Calculation di Zigma.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+Zigma mengimplementasikan elemen RPG (*Role-Playing Game*) yang kental, sehingga pengetahuan (jawaban benar) harus diseimbangkan dengan strategi.
+
+---
+
+## Alur Pertarungan (Combat Mechanics)
+
+1. **Encounter Phase:** Party bertemu monster/boss. Monster memiliki *Health Point* (HP).
+2. **Action Phase (Kuis):** Soal kuis muncul di layar. Semua pemain atau *turn* tertentu harus menjawab.
+3. **Execution Phase:** Kalkulasi seberapa banyak yang menjawab benar. Animasi serangan akan dieksekusi di layar utama Host.
+
+## Sistem Skor (Damage Calculation)
+
+Dalam Zigma, skor pemain dikonversikan menjadi statistik *Damage* atau EXP:
+
+- **Ketepatan Jawaban (Base Damage):** Menjawab benar memberikan *base damage* statis.
+- **Waktu Menjawab (Critical Hit):** Menjawab dengan sangat cepat (biasanya di 3 detik pertama) memiliki peluang untuk mencetak *Critical Hit* (*damage* ganda).
+- **Party Combo:** Jika banyak atau seluruh pemain dalam *guild/party* menjawab benar secara beruntun, akan terbuka *Combo Strike* masif untuk menjatuhkan *Boss*.
+
+<Callout title="Tips Jago" type="info">
+Kerja sama adalah kunci! Terkadang, lebih baik fokus menjawab pelan tapi **benar** daripada terburu-buru dan salah. Kekuatan *Party* jauh lebih besar saat semua orang berkontribusi memberikan *damage* yang konsisten.
+</Callout>

@@ -1,0 +1,28 @@
+---
+title: Mekanik & Tingkat Kesulitan
+description: Penjelasan tentang mekanik balapan dan sistem perhitungan skor di CrazyRace.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+CrazyRace mendesain ulang kuis konvensional menjadi sebuah arena balap kompetitif.
+
+---
+
+## Alur Permainan (Racing Mechanics)
+
+1. **Start Engine:** Semua pemain berada di garis Start yang sama.
+2. **Questions as Fuel:** Soal-soal kuis berfungsi layaknya bahan bakar (Nitro). Setiap kali kamu menjawab, itu akan menggerakkan avatarmu di lintasan.
+3. **Feedback Visual:** Mekanik utamanya bertumpu pada visual balapan di layar Host. Pergerakan mobil di layar adalah *live representation* dari progres poin pemain.
+
+## Sistem Skor (Kecepatan Laju)
+
+Posisi *finish* dan skor dihitung berdasarkan hal berikut:
+
+- **Ketepatan Jawaban:** Merupakan faktor terpenting. Jawaban salah membuat mobil stagnan.
+- **Waktu Jawab (Speed Bonus):** Jika kamu menjawab benar dalam 1-2 detik, mobilmu akan mendapatkan *Perfect Boost* (melaju sangat jauh). Semakin lama menjawab, lajunya semakin pelan meskipun jawabannya benar.
+- **Streak:** Menjawab benar beberapa kali berturut-turut tanpa salah akan meningkatkan *top speed* atau pengganda (multiplier) poin.
+
+<Callout title="Tips Jago" type="info">
+Berpikirlah cepat namun jangan terburu-buru hingga salah pencet. Di CrazyRace, salah menjawab berakibat sangat fatal karena efek pengereman (penalti pelambatan) yang menguntungkan lawanmu!
+</Callout>

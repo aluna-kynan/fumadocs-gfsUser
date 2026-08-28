@@ -1,4 +1,4 @@
 {
   "title": "SpaceQuiz",
-  "children": ["index", "cara-bermain", "power-up", "leaderboard", "achievement"]
+  "children": ["index", "host", "mekanik", "player"]
 }

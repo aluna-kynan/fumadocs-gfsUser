@@ -1,0 +1,28 @@
+---
+title: Mekanik & Tingkat Kesulitan
+description: Penjelasan tentang mekanik dan sistem perhitungan skor di MemoryQuiz.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+MemoryQuiz didesain khusus untuk menguji dua jenis kecerdasan: memori visual jangka pendek dan pengetahuan faktual kuis.
+
+---
+
+## Alur Permainan
+
+1. **Fase Observasi:** Di awal putaran (jika diaktifkan oleh sistem), pemain terkadang diberikan waktu singkat untuk melihat seluruh posisi kartu sebelum ditutup kembali.
+2. **Fase Matchmaking:** Pemain harus membalik dua kartu yang sama. Kesalahan membalik kartu bisa mengakibatkan pengurangan bonus atau memakan waktu berharga.
+3. **Quiz Phase:** Kuis baru akan muncul HANYA jika kartu memori berhasil dicocokkan.
+
+## Sistem Skor
+
+Total skor yang didapatkan dihitung berdasarkan:
+
+- **Ketepatan Jawaban:** Poin utama yang paling besar.
+- **Waktu Kuis:** Kecepatan saat menjawab kuis yang terbuka.
+- **Waktu Memori (Card Flipping):** Semakin sedikit percobaan salah (missed flip) yang kamu lakukan, skormu akan lebih maksimal.
+
+<Callout title="Tips Jago" type="info">
+Fokuslah menghafal letak kartu! Seringkali pemain kalah bukan karena tidak tahu jawaban kuisnya, melainkan karena kehabisan waktu untuk menemukan pasangan kartu memorinya.
+</Callout>

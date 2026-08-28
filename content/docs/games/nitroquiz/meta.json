@@ -1,4 +1,4 @@
 {
   "title": "NitroQuiz",
-  "children": ["index", "cara-bermain", "nitro-boost", "speed-mode", "leaderboard"]
+  "children": ["index", "host", "mekanik", "player"]
 }

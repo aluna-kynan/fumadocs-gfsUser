@@ -1,0 +1,28 @@
+---
+title: Mekanik & Tingkat Kesulitan
+description: Penjelasan tentang mekanik kecepatan dan sistem perhitungan skor di NitroQuiz.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+NitroQuiz didesain murni untuk mereka yang mencari kompetisi kuis beradrenalin tinggi (*Fast-Paced Quiz Battle*).
+
+---
+
+## Alur Permainan
+
+1. **Countdown Singkat:** Sebelum setiap soal, hanya ada jeda super singkat.
+2. **Race to Answer:** Begitu soal muncul, timer yang berjalan mundur sangat cepat akan dimulai.
+3. **Instant Ranking:** Setelah durasi soal habis, peringkat akan langsung ter-*update* secara *live* menampilkan siapa yang melesat ke atas klasemen.
+
+## Sistem Skor (Nitro System)
+
+Di NitroQuiz, menjawab "benar" saja tidak cukup. Skormu bergantung kuat pada seberapa lama waktu tersisa (Time-Remaining):
+
+- **Ketepatan Jawaban:** Syarat utama mendapatkan poin dasar. Menjawab salah = 0 poin, secepat apapun kamu menjawab.
+- **Nitro Time Bonus:** Misal timer diatur 20 detik. Pemain yang menjawab di detik ke-1 akan mendapatkan **poin hampir 100%**, sedangkan pemain yang baru menjawab di detik ke-19 hanya akan mendapatkan **sebagian kecil poin**.
+- **First Blood (Opsional):** Seringkali pemain pertama yang menjawab dengan benar di suatu soal (*The Fastest*) mendapatkan poin tambahan spesial (jika diaktifkan Host).
+
+<Callout title="Tips Jago" type="info">
+Pelajari membaca cepat (skimming). Jangan buang waktu membaca soal sampai habis jika kalimat pertamanya saja sudah cukup memberimu petunjuk jawaban!
+</Callout>
